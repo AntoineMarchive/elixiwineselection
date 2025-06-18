@@ -1,0 +1,278 @@
+/* Reset & base typographique */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #faf9f5;
+  line-height: 1.6;
+  font-size: 16px;
+  margin : 0 20px
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & menu */
+header {
+  background: linear-gradient(
+    180deg,
+    #2e2b2c 0%,
+    #1c1b1b 40%,
+    #000000 100%
+  );
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+    color : whitesmoke
+}
+
+.header-nav ul {
+  display: flex;
+  list-style:none;
+  justify-content: center;
+  gap: 2rem;
+}
+.header-nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+}
+.header-nav a:hover {
+  color: #800000; /* bordeaux */
+}
+
+/* Titres principaux */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+h2 {
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #800000;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+section:nth-child(even) {
+  background: #fff;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* verticalement */
+  align-items: center;     /* horizontalement */
+  height: auto;           /* pleine hauteur */
+  text-align: center;
+  background: #f9f8f4;     /* fond doux proche du blanc cassé */
+  padding: 0 20px;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #800000; /* bordeaux */
+  font-family: Georgia, serif;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+
+
+/* Listes de contenus */
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* disposition formulaire */
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Colonne gauche : le texte */
+.contact-form h2,
+.contact-form p {
+  flex: 1;
+  max-width: 40%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.contact-form h2 {
+  color: #800000;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contact-form p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Colonne droite : le formulaire */
+.contact-form form {
+  flex: 1;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row div {
+  flex: 1;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  background-color: #800000;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a00000;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.checkbox-group a {
+  color: #0033cc;
+  text-decoration: underline;
+}
+
+
+
+/* Formulaires */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: grid;
+  gap: 15px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 1rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #800000;
+}
+button {
+  padding: 12px 24px;
+  background: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background: #a00000;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(
+    180deg,
+    #2e2b2c 0%,
+    #1c1b1b 40%,
+    #000000 100%
+  );
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.875rem;
+  color: #555;
+  border-top: 1px solid #eee;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 10px;
+}
+.footer-nav a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer p {
+    color: whitesmoke
+}
+.footer-nav a:hover {
+  color: #800000;
+}
