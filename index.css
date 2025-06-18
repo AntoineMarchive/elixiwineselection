@@ -130,6 +130,66 @@ section:nth-child(even) {
   line-height: 1.6;
 }
 
+/* background images */
+.main-container {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 20px;
+  color: white;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5; /* ajustable selon lisibilité */
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4); /* optionnel : fond sombre transparent pour meilleure lisibilité */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Expertise section */
+
+.expertise-container {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 20px;
+  color: white;
+  margin-top: 50px
+}
+
+.expertise-container .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.expertise-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 
 
 /* Listes de contenus */
