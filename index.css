@@ -333,6 +333,12 @@ button:hover {
   background: #a00000;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;}
+
+
 /* Footer */
 footer {
   background: linear-gradient(
@@ -349,6 +355,12 @@ footer {
   color: #555;
   border-top: 1px solid #eee;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction:row-reverse
+}
+
 .footer-nav ul {
   display: flex;
   justify-content: center;
